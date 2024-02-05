@@ -699,10 +699,11 @@ section.raw-structure {
     background-color: #5774b4;
 }
 h4.heading {
+    margin-bottom: 3vw;
+    font-weight: 500;
+    font-size: 40px;
+    color: #fff;
     text-align: center;
-    font-size: 44px;
-    line-height: 47px;
-    font-weight: 600;
 }
 .mg-team-desc-inner {
     font-style: normal;
@@ -963,4 +964,23 @@ div#page5 video {
     color: #fff;
     text-decoration: none;
     font-size: 12px;
+}
+h3.vission {
+    font-weight: 100;
+    line-height: 1.2;
+    width: 100%;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+}
+.vission-mission {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 8vw 8vw;
+    width: 100vw;
+    background-color: #3426f6;
+    font-family: a;
 }
