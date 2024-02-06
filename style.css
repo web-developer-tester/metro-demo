@@ -681,6 +681,7 @@ section.raw-structure {
     padding: 4px;
     border-radius: 2px;
     border: 1px dotted #1137ca;
+    width: 63px;
 }
 .icon img:hover {
     transform: rotate(360deg);
