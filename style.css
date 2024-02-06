@@ -89,7 +89,7 @@ div#right-nav {
 .bottom-page1>a {
     padding: 10px 20px;
     border: none;
-    border-radius: 50px;
+    border-radius: 6px;
     background-color: #fff;
     color: #0b48ed;
     font-size: 16px;
@@ -109,7 +109,7 @@ div#right-nav {
     margin: 0;
     padding: 0;
     margin-bottom: 27px;
-    font-family: 'd';
+    font-family: 'a';
 }
 #page2{
     display: flex;
@@ -786,7 +786,7 @@ ul.footer-links li a:hover {
     transition-duration: 1s;
 }
 .footer-content {
-    display: inline-block;
+    display: block;
     margin: 15px 0px;
 }
 .footer-content p {
@@ -982,4 +982,9 @@ h3.vission {
     width: 100vw;
     background-color: #3426f6;
     font-family: a;
+}
+h3.brand {
+    font-size: 22px;
+    line-height: 38px;
+    text-align: justify;
 }
