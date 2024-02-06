@@ -83,10 +83,10 @@ gsap.to("#page2>h1>span",{
         start:`top bottom`,
         end:`bottom top`,
         scroller:`#main`,
-        scrub:.5,
+        scrub:.8,
     },
-    stagger:.2,
-    color:`#fff`
+    stagger:.1,
+    color:`rgb(255 255 255)`
 })
 
 function canvas(){
