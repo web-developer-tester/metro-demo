@@ -27,14 +27,6 @@ var otvshows= $('.section-otv-shows').owlCarousel({
     }
 });
 
-$(function(){
-  $('.nav-toggle, nav a').on('click',function(){
-    $('nav').toggleClass('open');
-    $('main').toggleClass('back').toggleClass("blur");
- 
-  });
-});
-
 function loco(){
     gsap.registerPlugin(ScrollTrigger);
 
@@ -67,27 +59,6 @@ ScrollTrigger.refresh();
 }
 loco()
 
-
-var clutter = "";
-
-document.querySelector("#page2>h1").textContent.split("").forEach(function(dets){
-    clutter += `<span>${dets}</span>`
-
-    document.querySelector("#page2>h1").innerHTML = clutter;
-})
-
-
-gsap.to("#page2>h1>span",{
-    scrollTrigger:{
-        trigger:`#page2>h1>span`,
-        start:`top bottom`,
-        end:`bottom top`,
-        scroller:`#main`,
-        scrub:.8,
-    },
-    stagger:.1,
-    color:`rgb(255 255 255)`
-})
 
 function canvas(){
     const canvas = document.querySelector("#page3>canvas");
@@ -247,51 +218,6 @@ ScrollTrigger.create({
 });
 }
 canvas()
-
-
-
-
-var clutter = "";
-
-document.querySelector("#page4>h1").textContent.split("").forEach(function(dets){
-    clutter += `<span>${dets}</span>`
-
-    document.querySelector("#page4>h1").innerHTML = clutter;
-})
-
-gsap.to("#page4>h1>span",{
-  scrollTrigger:{
-      trigger:`#page4>h1>span`,
-      start:`top bottom`,
-      end:`bottom top`,
-      scroller:`#main`,
-      scrub:.5,
-  },
-  stagger:.2,
-  color:`#fff`
-})
-
-
-
-var clutter = "";
-
-document.querySelector("#page6>h1").textContent.split("").forEach(function(dets){
-    clutter += `<span>${dets}</span>`
-
-    document.querySelector("#page6>h1").innerHTML = clutter;
-})
-
-gsap.to("#page6>h1>span",{
-  scrollTrigger:{
-      trigger:`#page6>h1>span`,
-      start:`top bottom`,
-      end:`bottom top`,
-      scroller:`#main`,
-      scrub:.5,
-  },
-  stagger:.2,
-  color:`#fff`
-})
 
 
 
