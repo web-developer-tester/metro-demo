@@ -1049,6 +1049,7 @@ body {
       text-align: center;
       margin: 0px 0 25px;
       font-family: 'a';
+      color: #fff;
     }
     .form-wrapper {
       display: flex;
