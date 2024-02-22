@@ -697,7 +697,6 @@ section.raw-structure {
     transition: transform .7s ease-in-out;
     padding: 4px;
     border-radius: 2px;
-    border: 1px dotted #1137ca;
     width: 63px;
 }
 .icon img:hover {

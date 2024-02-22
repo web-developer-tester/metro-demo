@@ -62,10 +62,11 @@ loco()
 
 function canvas(){
     const canvas = document.querySelector("#page3>canvas");
+    
 const context = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = 1100;
 
 
 window.addEventListener("resize", function () {
@@ -155,7 +156,7 @@ function files(index) {
   return data.split("\n")[index];
 }
 
-const frameCount = 72;
+const frameCount = 73;
 
 const images = [];
 const imageSeq = {
@@ -214,10 +215,11 @@ ScrollTrigger.create({
   pin: true,
   scroller: `#main`,
   start: `top top`,
-  end: `250% top`,
+  end: `100% top`,
 });
 }
 canvas()
+
 
 
 
