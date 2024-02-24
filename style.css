@@ -240,15 +240,11 @@ div#right-nav {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #5b79b7;
-    margin: 0 auto;
 }
 #page3>canvas{
-    height: 100vh;
-    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
     position: relative;
-    align-items: center;
-    
 }
 #page4{
     display: flex;

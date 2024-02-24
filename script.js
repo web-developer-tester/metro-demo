@@ -62,11 +62,10 @@ loco()
 
 function canvas(){
     const canvas = document.querySelector("#page3>canvas");
-    
 const context = canvas.getContext("2d");
 
-canvas.width = window.innerWidth;
-canvas.height = 1100;
+canvas.width = 1920;
+canvas.height = 1088;
 
 
 window.addEventListener("resize", function () {
@@ -149,9 +148,7 @@ function files(index) {
   ./segment/v10003.jpg
   ./segment/v10002.jpg
   ./segment/v10001.jpg
-  ./segment/v10000.jpg
-  
-  
+  ./segment/v10000.jpeg
  `;
   return data.split("\n")[index];
 }
@@ -177,7 +174,7 @@ gsap.to(imageSeq, {
     scrub: .5,
     trigger: `#page3`,
     start: `top top`,
-    end: `100% top`,
+    end: `250% top`,
     scroller: `#main`,
   },
   onUpdate: render,
@@ -194,8 +191,8 @@ function scaleImage(img, ctx) {
   var hRatio = canvas.width / img.width;
   var vRatio = canvas.height / img.height;
   var ratio = Math.max(hRatio, vRatio);
-  var centerShift_x = (canvas.width - img.width * ratio) / 4;
-  var centerShift_y = (canvas.height - img.height * ratio) / 4;
+  var centerShift_x = (canvas.width - img.width * ratio) / 2;
+  var centerShift_y = (canvas.height - img.height * ratio) / 2;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(
     img,
@@ -215,10 +212,41 @@ ScrollTrigger.create({
   pin: true,
   scroller: `#main`,
   start: `top top`,
-  end: `100% top`,
+  end: `250% top`,
 });
 }
 canvas()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
