@@ -65,7 +65,7 @@ function canvas(){
 const context = canvas.getContext("2d");
 
 canvas.width = 1920;
-canvas.height = 1088;
+canvas.height = 1100;
 
 
 window.addEventListener("resize", function () {
