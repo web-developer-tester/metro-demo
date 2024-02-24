@@ -64,8 +64,8 @@ function canvas(){
     const canvas = document.querySelector("#page3>canvas");
 const context = canvas.getContext("2d");
 
-canvas.width = 1920;
-canvas.height = 1100;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 
 window.addEventListener("resize", function () {
