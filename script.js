@@ -148,7 +148,7 @@ function files(index) {
   ./segment/v10003.jpg
   ./segment/v10002.jpg
   ./segment/v10001.jpg
-  ./segment/v10000.jpeg
+  ./segment/v10000.jpg
  `;
   return data.split("\n")[index];
 }
