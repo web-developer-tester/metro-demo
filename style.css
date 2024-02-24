@@ -25,10 +25,6 @@ p{
     font-family: c;
     src: url(./KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
 }
-@font-face {
-    font-family: d;
-    src: url(./E111Viva.ttf);
-}
 #page1
 {
     height: 100vh;
@@ -240,7 +236,6 @@ div#right-nav {
     position: relative;
     height: 100vh;
     width: 100vw;
-    padding: 8vw 8vw;
     background-color: #5b79b7;
 }
 #page3>canvas{
