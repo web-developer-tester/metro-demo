@@ -240,6 +240,8 @@ div#right-nav {
     position: relative;
     height: 100vh;
     width: 100vw;
+    padding: 8vw 8vw;
+    background-color: #5b79b7;
 }
 #page3>canvas{
     max-height: 100vh;
