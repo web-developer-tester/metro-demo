@@ -237,6 +237,8 @@ div#right-nav {
     height: 100vh;
     width: 100vw;
     background-color: #5b79b7;
+    margin: 0 auto;
+    text-align: center;
 }
 #page3>canvas{
     max-height: 100vh;
