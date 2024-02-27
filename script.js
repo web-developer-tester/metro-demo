@@ -1,12 +1,12 @@
 var otvshows= $('.section-otv-shows').owlCarousel({
     loop:true,
-    margin:10,
+    margin:0,
     dots: false,
     autoHeight : true,
     autoplayTimeout:5000,
     responsiveClass:true,
     autoplayHoverPause:true,
-    nav:false,
+    nav:true,
     lazyLoad:true,
     responsive:{
         0:{
@@ -25,6 +25,11 @@ var otvshows= $('.section-otv-shows').owlCarousel({
             autoplay:true,
         }
     }
+    $('.nextbreaking').click(function () {
+    sectionotvshows.trigger('next.owl.carousel');
+});
+$('.prevbreaking').click(function () {
+   sectionotvshows.trigger('prev.owl.carousel');
 });
 
 function loco(){
