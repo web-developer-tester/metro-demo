@@ -294,7 +294,7 @@ div#right-nav {
     height: auto;
     width: 100vw;
     font-family: a;
-    background-color: #5b79b7;
+    background-color: #11235A;
 }
 .gallery-heading {
     font-weight: 500;
@@ -1196,34 +1196,4 @@ padding: 16px 0 0;
     margin: 0 auto;
     font-size: 25px;
     padding: 40px 0px;
-}
-#page8 {
-    font-family: a;
-    flex-direction: column;
-    width: 100vw;
-    position: relative;
-    padding: 8vw 8vw;
-    color: #fff;
-    background-color: #11235A;
-    text-align: center;
-    margin: 0 auto;
-}
-#page8 h2{
-    font-weight: 500;
-    font-size: 50px;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 57px;
-}
-#page8 p {
-    text-align: justify;
-    margin: 0 auto;
-    font-size: 25px;
-    padding: 40px 0px;
-    height: 489px;
-    overflow: hidden;
-}
-#page8 img {
-    width: 100%;
-    height: auto;
 }
