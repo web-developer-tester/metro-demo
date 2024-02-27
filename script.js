@@ -25,11 +25,6 @@ var otvshows= $('.section-otv-shows').owlCarousel({
             autoplay:true,
         }
     }
-    $('.nextbreaking').click(function () {
-    sectionotvshows.trigger('next.owl.carousel');
-});
-$('.prevbreaking').click(function () {
-   sectionotvshows.trigger('prev.owl.carousel');
 });
 
 function loco(){
