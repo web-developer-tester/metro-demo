@@ -1197,30 +1197,34 @@ padding: 16px 0 0;
     font-size: 25px;
     padding: 40px 0px;
 }
-.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot.owl-nav {
+.section-otv-shows button.owl-prev, .section-otv-shows button.owl-next {
+    color: #fff !important;
+    border: none !important;
+    outline: none;
+    width: 62px;
+    height: 115px;
+    font-size: 148px !important;
+    border-radius: 50%;
     position: absolute;
-    left: 20px;
-    top: 50%;
-    background-color: var(--base-color) !important;
-    display: block;
-    padding: 0 .3em !important;
-    font-size: 3em;
-    margin: 0;
-    cursor: pointer;
-    color: #fff;
-    transform: translate(-50%, -50%);
+    bottom: 58%;
+    z-index: 5 !important;
+    transition-duration: .5s;
+    opacity: .5;
+}
+.section-otv-shows button.owl-prev:hover, .section-otv-shows button.owl-next:hover {
+    opacity: 1;
+    transition-duration: .5s;
+}
+button.owl-prev {
+    left: -7%;
+}
+button.owl-next {
+    right: -7%;
 }
 
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot.owl-nav {
-    position: absolute;
-    right: -23px;
-    top: 50%;
-    background-color: var(--base-color) !important;
-    display: block ;
-    padding: 0 .3em !important;
-    font-size: 3em ;
-    margin: 0;
-    cursor: pointer;
-    color: #fff;
-    transform: translate(-50%, -50%);
+button.owl-prev.disabled {
+    display: none;
+}
+button.owl-next.disabled {
+    display: none;
 }

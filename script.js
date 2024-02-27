@@ -25,6 +25,7 @@ var otvshows= $('.section-otv-shows').owlCarousel({
             autoplay:true,
         }
     }
+    
 });
 
 function loco(){
