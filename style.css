@@ -334,6 +334,7 @@ margin-bottom: 2vw;
     color: #fff;
     font-size: 40px;
     font-family: 'a';
+    text-align: center;
 }
 .page8-bottom>button{
     padding: 20px 30px;
@@ -1022,11 +1023,16 @@ body {
     font-family: 'a';
     height: 471px;
     overflow: hidden;
+    margin-bottom: 10px;
     @media screen and (max-width: 991px) {
-      width: 70%;
+      width: 100%;
+      height: auto;
+      padding: 20px;
     }
     @media screen and (max-width: 767px) {
-      width: 90%;
+      width: 100%;
+      height: auto;
+      padding: 20px;
     }
     .form-head {
       font-size: 25px;
@@ -1227,4 +1233,36 @@ button.owl-prev.disabled {
 }
 button.owl-next.disabled {
     display: none;
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@media (max-width: 768px){
+    #background-video {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+header img {
+    width: 63%;
+    height: auto;
+}
+header {
+    padding: 10px 10px;
+}
+.footer {
+    text-align: -webkit-center;
+}
+.footer-content p {
+    text-align: center;
+    margin: 0 auto;
+}
+.copyright h6 {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+}
 }
