@@ -9,15 +9,6 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <style type="text/css">
-    @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Asap", sans-serif;
-    }
-
     header {
       display: flex !important;
       align-items: flex-start;
@@ -26,20 +17,11 @@
       z-index: 99999;
       position: relative;
     }
-
-    body {
-      margin: 0%;
-      padding: 0%;
-      box-sizing: border-box;
-      background: #5774b4;
-    }
-
     section {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: a;
+       font-family: a;
+      padding: 8vw 8vw;
+      height: auto;
+    display: flex;
     }
 
     section:nth-child(1) {
@@ -53,7 +35,7 @@
 
     section:nth-child(3) {
       color: #fff;
-      background-color: #0a0d94;
+      background-color: #11235A;
     }
 
     section:nth-child(4) {
@@ -325,7 +307,7 @@
             <div class="desc">Entry-point</div>
           </div>
         </div>
-        <button onclick="history.back()" class="go-back"><i class="ri-arrow-left-line"></i></button>
+        <button onClick="parent.location='index.html'" class="go-back"><i class="ri-arrow-left-line"></i></button>
     </section>
     <div class="footer">
       <div class="container">

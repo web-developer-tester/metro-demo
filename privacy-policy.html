@@ -9,146 +9,122 @@
       <link rel="stylesheet" href="style.css">
    </head>
    <style type="text/css">
-      @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
-      * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Asap", sans-serif;
+      section {
+      font-family: a;
+      padding: 8vw 8vw;
+    }
+
+    section:nth-child(1) {
+      color: #fff;
+    }
+
+    section:nth-child(2) {
+      color: #ffff;
+      background: #090b82;
+    }
+
+    section:nth-child(3) {
+      color: #fff;
+      background-color: #11235A;
+    }
+
+    section:nth-child(4) {
+      color: #fff;
+      background: #090b82;
+    }
+
+    section:nth-child(5) {
+      color: #fff;
+      background: #090b82;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 20px;
+    }
+
+    section h2 {
+      font-size: 40px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 900px) {
+      section h1 {
+        font-size: 2rem;
+        text-align: center;
       }
-      header {
+
+      section .text-container {
+        flex-direction: column;
+      }
+    }
+
+    .reveal {
+      position: relative;
+      opacity: 0;
+    }
+
+    .reveal.active {
+      opacity: 1;
+    }
+
+    .active.fade-bottom {
+      animation: fade-bottom 1s ease-in;
+    }
+
+    .active.fade-left {
+      animation: fade-left 1s ease-in;
+    }
+
+    .active.fade-right {
+      animation: fade-right 1s ease-in;
+    }
+
+    @keyframes fade-bottom {
+      0% {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade-left {
+      0% {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade-right {
+      0% {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    header {
       display: flex !important;
       align-items: flex-start;
       justify-content: space-between;
       padding: 24px 24px;
       z-index: 99999;
       position: relative;
-      }
-      body {
-      margin: 0%;
-      padding: 0%;
-      box-sizing: border-box;
-      background: #5774b4;
-      }
-      section {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: a;
-      }
-      section:nth-child(1) {
-      color: #fff;
-      }
-      section:nth-child(2) {
-      color: #ffff;
-      background: #090b82;
-      }
-      section:nth-child(3) {
-      color: #fff;
-      background-color: #0a0d94;
-      }
-      section:nth-child(4) {
-      color: #fff;
-      background: #090b82;
-      }
-      section .container {
-      margin: 100px;
-      }
-      h1 {
-      font-size: 3rem;
-      margin: 20px;
-      }
-      #page1 {
-      height: 100vh;
-      width: 100vw;
-      position: relative;
-      background-color: #161aae;
-      }
-      section h2 {
-      font-size: 40px;
-      text-align: center;
-      text-transform: uppercase;
-      }
-      section .text-container {
-      display: flex;
-      }
-      section .text-container .text-box {
-      margin: 20px;
-      padding: 20px;
-      background: #00c2cb;
-      }
-      section .text-container .text-box h3 {
-      font-size: 30px;
-      text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      }
-      h3.vission {
-      text-align: center;
-      top: 42%;
-      position: absolute;
-      font-size: xx-large;
-      line-height: 47px;
-      }
-      h1.breadcumb {
-      font-size: 68px;
-      }
-      @media (max-width: 900px) {
-      section h1 {
-      font-size: 2rem;
-      text-align: center;
-      }
-      section .text-container {
-      flex-direction: column;
-      }
-      }
-      .reveal {
-      position: relative;
-      opacity: 0;
-      }
-      .reveal.active {
-      opacity: 1;
-      }
-      .active.fade-bottom {
-      animation: fade-bottom 1s ease-in;
-      }
-      .active.fade-left {
-      animation: fade-left 1s ease-in;
-      }
-      .active.fade-right {
-      animation: fade-right 1s ease-in;
-      }
-      @keyframes fade-bottom {
-      0% {
-      transform: translateY(50px);
-      opacity: 0;
-      }
-      100% {
-      transform: translateY(0);
-      opacity: 1;
-      }
-      }
-      @keyframes fade-left {
-      0% {
-      transform: translateX(-100px);
-      opacity: 0;
-      }
-      100% {
-      transform: translateX(0);
-      opacity: 1;
-      }
-      }
-      @keyframes fade-right {
-      0% {
-      transform: translateX(100px);
-      opacity: 0;
-      }
-      100% {
-      transform: translateX(0);
-      opacity: 1;
-      }
-      }
+    }
    </style>
    <body>
       <header>
@@ -233,7 +209,7 @@
                </div>
             </div>
          </div>
-         <button onclick="history.back()" class="go-back"><i class="ri-arrow-left-line"></i></button>
+         <button onClick="parent.location='index.html'" class="go-back"><i class="ri-arrow-left-line"></i></button>
       </section>
       <div class="footer">
          <div class="container">
