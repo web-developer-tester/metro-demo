@@ -50,6 +50,11 @@ div#right-nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    top: 23px;
+    float: right;
+    right: 22px;
+    z-index: 9999;
 }
 #right-nav>a {
     padding: 10px 20px;
