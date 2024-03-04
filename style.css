@@ -1255,9 +1255,7 @@ button.owl-next.disabled {
 
 @media (max-width: 768px){
     #background-video {
-  width: auto;
   height: auto;
-  object-fit: cover;
 }
 header img {
     width: 63%;
@@ -1280,5 +1278,36 @@ header {
 }
 #page1 {
     height: auto;
+    width: 100vw;
+    position: relative;
+    display: inline-flex;
+}
+.bottom-page1 {
+    position: absolute;
+    top: 94px;
+    /* height: 18vh; */
+    width: 197px;
+    left: 3%;
+}
+.bottom-page1>h1 {
+    font-family: 'a';
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 26px;
+    color: #fff;
+    margin-bottom: -4px;
+}
+.bottom-page1>h4 {
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 23px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    font-family: 'a';
+}
+.bottom-page1>a {
+    display: none;
 }
 }
