@@ -335,6 +335,19 @@ margin-bottom: 2vw;
     font-family: 'a';
     text-align: center;
 }
+.wow a {
+margin-bottom: 2vw;
+    font-weight: 500;
+    color: #fff;
+    font-size: 50px;
+    font-family: 'a';
+    text-align: center;
+    text-decoration: none;
+}
+.wow a:hover {
+    color: #dbe5f9;
+    text-decoration: none;
+}
 .page8-bottom>button{
     padding: 20px 30px;
     border-radius: 50px;
@@ -1309,5 +1322,15 @@ header {
 }
 .bottom-page1>a {
     display: none;
+}
+#meny {
+    width: 14rem;
+}
+nav a {
+    font-size: 25px;
+}
+.section-otv-shows button.owl-prev, .section-otv-shows button.owl-next {
+    width: 37px;
+    font-size: 121px !important;
 }
 }
